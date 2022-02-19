@@ -9,7 +9,7 @@ app.set('views','views')
 app.get('/',(req,res)=>{
     let arr =[]
     for(let i = 1; i<=50; i++){
-        arr.push(`Soy ${ i%2==0? 'Par!':'Impar!'}`)
+        arr.push(`${i} Soy ${ i%2==0? 'Par!':'Impar!'}`)
     }
     res.render('index',{text:arr});
 })
